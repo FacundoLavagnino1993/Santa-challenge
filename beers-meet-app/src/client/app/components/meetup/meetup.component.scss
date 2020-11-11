@@ -1,0 +1,157 @@
+.meetup-card-ctn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 16px;
+  width: 100%
+}
+.meetups-ctn {
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto, sans-serif;
+  height: 220px;
+  margin: auto;
+  margin-top: 16px;
+  width: 320px;
+
+  .meetup-info {
+    width: 100%;
+  }
+
+  .add-info-ctn {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .first-box {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-left: 8px;
+      margin-top: 12px;
+      width: 40%;
+    }
+    .second-box {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12px;
+      margin-left: 12px;
+      width: 60%;
+      .info-ctn {
+        align-items: center;
+        border-bottom: 1px #b4b4b4 solid;
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        justify-content: center;
+        height: 30px;
+        .add-button-ctn {
+          cursor: pointer;
+          margin-left: 8px;
+          mat-icon {
+            color: #008020;
+            height: 22px;
+            font-size: 22px;
+            width: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .date-meetup-info {
+    align-items: center;
+    border: 2px solid #b4b4b4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    .month-ctn {
+      align-items: center;
+      background-color: #b4b4b4;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      color: #333333;
+      display: flex;
+      font-size: 16px;
+      font-weight: 500;
+      justify-content: center;
+      height: 25px;
+      width: 100%;
+    }
+    .date-ctn {
+      align-items: center;
+      color: #333333;
+      display: flex;
+      font-size: 14px;
+      font-weight: 500;
+      justify-content: center;
+      height: 25px;
+      width: 100%;
+    }
+    .day-ctn {
+      align-items: center;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      height: 60px;
+      font-size: 56px;
+    }
+  }
+
+  .name-ctn {
+    align-items: center;
+    background-color: #333333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fefefe;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: center;
+    height: 42px;
+    width: 100%;
+  }
+
+  .beers-needs {
+    align-items: center;
+    background-color: #fdff9b;
+    border: 1px solid #eeda29;;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    justify-content: center;
+    margin: 8px 8px 0 8px;
+  }
+  .user-action {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    justify-content: center;
+    margin: 8px 8px 0 8px;
+    .inscript-btn {
+      color: #008020;
+    }
+    .span-inscript {
+      color: #333333;
+    }
+    mat-icon {
+      color: #008020;
+      font-size: 32px;
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+::ng-deep .mat-card {
+  padding: 0px !important;
+}
+
+::ng-deep .mat-ink-bar {
+  background-color: #bb0000 !important;
+}

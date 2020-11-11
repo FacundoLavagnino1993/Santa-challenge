@@ -1,0 +1,38 @@
+<div class="login">
+  <div class="label-box">
+    <span class="title">MEETUP-BEER</span>
+  </div>
+  <div class="login-ctn">
+      <div class="title-ctn">
+        <span class="title">LOGIN</span>
+      </div>
+      <ng-form novalidate="novalidate" autocomplete="off" name="authLoginFrom" #authLoginFrom="ngForm" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-ctn">
+          <mat-form-field>
+            <input matInput name="email" type="email" placeholder="Email" autocomplete="off"
+           formControlName="email" />
+            <mat-error *ngIf="loginForm.get('email').hasError('required')">
+              Campo requerido.
+            </mat-error>
+            <mat-error *ngIf="loginForm.get('email').hasError('email')">
+              Formato de email inválido.
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput name="password" type="password" placeholder="Contraseña"
+            formControlName="password" autocomplete="off" />
+             <mat-error>
+               Campo requerido.
+             </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="button-ctn">
+          <mat-spinner *ngIf="loading" diameter="40"></mat-spinner>
+          <button mat-button type="button" *ngIf="!loading" (click)="authLoginFrom.ngSubmit.emit()" [disabled]="loginForm.invalid || loginForm.pristine || loading">
+            <ng-container>INICIAR SESION</ng-container>
+          </button>
+        </div>
+      </ng-form>
+      <div class="error-ctn" *ngIf="errorToLogin">{{errorLoginMessage}}</div>
+  </div>
+</div>

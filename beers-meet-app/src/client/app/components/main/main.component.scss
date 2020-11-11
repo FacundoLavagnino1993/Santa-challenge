@@ -1,0 +1,100 @@
+@import '../../scss/variables';
+.main {
+  display: flex;
+  flex-direction: row;
+  min-height: 840px;
+  @include md {
+    flex-direction: column;
+  }
+  .side-nav {
+    background-color: rgb(224, 224, 224);
+    min-width: 240px;
+    .user-box {
+      align-items: center;
+      background-color: #333333;
+      display: flex;
+      flex-direction: row;
+      height: 80px;
+      padding-left: 16px;
+      .icon-ctn {
+        align-items: center;
+        background-color: rgb(224, 224, 224);
+        border: 2px solid #008020;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        mat-icon {
+          font-size: 32px;
+          height: 32px;
+          width: 32px;
+        }
+      }
+      .user-info {
+        color: #fefefe;
+        display: flex;
+        flex-direction: column;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        margin-left: 16px;
+        height: 48px;
+        justify-content: space-evenly;
+        width: 140px;
+        word-wrap: break-word;
+        .name-label {
+          font-size: 16px;
+        }
+        .email-label {
+          font-size: 12px;
+        }
+      }
+    }
+    .nav-list {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .list-item {
+      align-items: center;
+      color: #333333;
+      cursor: pointer;
+      display: flex;
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      height: 48px;
+      width: 100%;
+      span {
+        padding-left: 16px;
+      }
+    }
+    .list-item:hover {
+      background-color: #bb0000;
+      color: #fefefe;
+    }
+  }
+  .body-main {
+    width: 100%;
+    .loading-data {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      width: 100%;
+    }
+    .meetups-feed {
+      meetup {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+::ng-deep.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #bb0000;
+}
+
+

@@ -1,0 +1,57 @@
+.invite-ctn {
+  min-height: 356px;
+  height: auto;
+  .invite-title {
+    align-items: center;
+    color: #333333;
+    display: flex;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .meetup-select {
+    margin-top: 16px;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  .users-ctn {
+    background-color: #eeeeee;
+    height: 200px;
+    overflow: scroll;
+    mat-selection-list {
+      outline: none !important;
+      .select-all-list:hover {
+        background-color: #d3d3d3;
+      }
+    }
+  }
+  .button-ctn {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 16px;
+    .next-button {
+      background-color: #bb0000;
+      color: #fefefe;
+    }
+    button {
+      margin-left: 16px;
+    }
+  }
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  color: #bb0000 !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+
+  background-color: #bb0000 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+
+  background-color: #bb0000 !important;;
+ }

@@ -1,0 +1,61 @@
+<div class="create-ctn">
+  <div class="create-title">
+    <span>CREAR MEETUP</span>
+  </div>
+  <div class="create-from">
+    <form [formGroup]="meetupForm" (ngSubmit)="createMeet()">
+      <div class="inputs-ctn">
+        <mat-form-field>
+          <input matInput name="name" type="text" placeholder="Nombre" formControlName="name">
+          <mat-error *ngIf="meetupForm.get('name').hasError('required')">
+            Campo requerido.
+          </mat-error>
+          <mat-error  *ngIf="meetupForm.get('name').hasError('maxlength')">
+            Nombre demasiado largo.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [matDatepicker]="fromPicker" (focus)="fromPicker.open()" [min]="minDate" [max]="maxDate" name="date" type="text" placeholder="Fecha" formControlName="date">
+          <mat-datepicker-toggle matSuffix [for]="fromPicker"></mat-datepicker-toggle>
+          <mat-datepicker #fromPicker></mat-datepicker>
+          <mat-error  *ngIf="meetupForm.get('date').hasError('required')">
+            Campo requerido.
+          </mat-error>
+        </mat-form-field>
+          <div class="time-ctn">
+            <mat-form-field>
+              <mat-label>Hora</mat-label>
+              <mat-select name="hour" formControlName="hour">
+                <mat-option *ngFor="let hour of hours" [value]="hour">
+                  {{hour}}
+                </mat-option>
+              </mat-select>
+              <mat-error  *ngIf="meetupForm.get('hour').hasError('required')">
+                Campo requerido.
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Minutos</mat-label>
+              <mat-select name="minutes" formControlName="minutes">
+                <mat-option *ngFor="let minute of minutes" [value]="minute">
+                  {{minute}}
+                </mat-option>
+              </mat-select>
+              <mat-error  *ngIf="meetupForm.get('minutes').hasError('required')">
+                Campo requerido.
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      <div class="button-ctn">
+        <button mat-button class="next-button" type="submit" *ngIf="!loadingUsers" [disabled]="meetupForm.invalid || meetupForm.pristine || saving">
+          <mat-progress-bar *ngIf="saving" mode="indeterminate"></mat-progress-bar>
+          <ng-container>CREAR MEETUP</ng-container>
+        </button>
+        <button mat-button type="button" (click)="close()" >
+          CANCELAR
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

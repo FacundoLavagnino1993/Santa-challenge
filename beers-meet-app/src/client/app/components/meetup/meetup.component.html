@@ -1,0 +1,57 @@
+<div class="meetup-card-ctn">
+  <mat-card class="meetups-ctn" *ngFor="let meetup of meetups">
+    <div class="meetup-info">
+      <div class="name-ctn">
+        <span>{{meetup?.name?.toUpperCase()}}</span>
+      </div>
+      <div class="add-info-ctn">
+        <div class="first-box">
+          <div class="date-meetup-info">
+            <div class="month-ctn">
+              <span>{{meetup.dateMeetup | date: 'MMMM': 'es'}}</span>
+            </div>
+            <div class="date-ctn">
+              <span>{{meetup.dateMeetup | date: 'EEEE': 'es'}}</span>
+            </div>
+            <div class="day-ctn">
+              <span>{{meetup.dateMeetup | date: 'dd' }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="second-box">
+          <div class="info-ctn">
+            <span>TEMPERATURA: {{meetup?.temperature}}º</span>
+          </div>
+          <div class="info-ctn">
+            <span>Inscripciones: {{meetup?.users?.length}}</span>
+          </div>
+          <div class="info-ctn">
+            <span>Horario: {{meetup.dateMeetup | date: 'H:mm'}} hs.</span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="hasAdvancedRole && meetupType === CURRENT" class="beers-needs">
+        <span>CAJAS DE CERVEZA NECESARIAS: {{meetup.beersNeeded}}</span>
+      </div>
+      <div class="user-action" *ngIf="!hasAdvancedRole">
+        <div *ngIf="meetupType === CURRENT" >
+          <button *ngIf="!userRegistryValidation(meetup.users)" [disabled]="userRegistryValidation(meetup.users)" (click)="registerUser(meetup, inscriptAction)" class="inscript-btn" mat-button type="button">INSCRIBIRME</button>
+          <span *ngIf="userRegistryValidation(meetup.users)" class="span-inscript">INSCRIPTO</span>
+        </div>
+        <div *ngIf="meetupType === OLD">
+          <div *ngIf="!userRegistryValidation(meetup.usersCheckIn) && userRegistryValidation(meetup.users)">
+            <span>ASISTISTE?</span><button mat-button [disabled]="userRegistryValidation(meetup.usersCheckIn)" (click)="registerUser(meetup, checkInAction)" type="button">SI!</button>
+          </div>
+          <div class="check-in-icon" *ngIf="userRegistryValidation(meetup.usersCheckIn)">
+            <mat-icon>check_circle</mat-icon>
+          </div>
+          <div *ngIf="!userRegistryValidation(meetup.users)">
+            <span>NO TE INSCRIBISTE A TIEMPO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>
+
+

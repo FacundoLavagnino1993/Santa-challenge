@@ -1,0 +1,41 @@
+@import './variables';
+@import './normalize';
+@import './reset';
+
+
+//global styles for dialogs
+.create-dialog {
+  max-width: 320px !important;
+  @include md {
+    width: 100%;
+    .button-ctn {
+      flex-direction: column !important;
+      button {
+        margin-left: 0px !important;
+      }
+      button:nth-child(2) {
+        margin-top: 16px !important;
+      }
+    }
+  }
+}
+
+.invite-dialog {
+  max-width: 320px !important;
+  @include md {
+    width: 100%;
+    .invite-ctn {
+      .button-ctn {
+        flex-direction: column !important;
+        button {
+          margin-left: 0px !important;
+        }
+        button:nth-child(2) {
+          margin-top: 16px !important;
+        }
+      }
+    }
+
+  }
+}
+

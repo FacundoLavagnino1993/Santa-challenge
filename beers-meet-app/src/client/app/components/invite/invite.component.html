@@ -1,0 +1,36 @@
+<div class="invite-ctn">
+  <div class="invite-title">
+    <div>
+      Enviar invitación
+    </div>
+  </div>
+  <div class="meetup-select">
+    <mat-form-field>
+      <mat-label>Seleccione meet</mat-label>
+      <mat-select [(value)]="meetupSelected">
+        <mat-option *ngFor="let meetup of meetups" [value]="meetup">
+          {{meetup?.name?.toUpperCase()}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="users-ctn">
+    <mat-selection-list #usersSelectList>
+      <mat-list-item (click)="usersSelectList.selectAll()" class="select-all-list" style="cursor:pointer">
+        Seleccionar todos
+      </mat-list-item>
+      <mat-list-option *ngFor="let user of allUsers" [disabled]="usersInvitesYet(user.email)">
+        {{user.email}}
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+  <div class="button-ctn">
+    <button mat-button class="next-button" type="button" (click)="sendInvites(usersSelectList.selectedOptions.selected)" *ngIf="!loadingUsers" [disabled]="usersSelectList.selectedOptions.selected.length == 0 || meetupSelected === null">
+      <mat-progress-bar *ngIf="saving" mode="indeterminate"></mat-progress-bar>
+      <ng-container>INVITAR</ng-container>
+    </button>
+    <button mat-button type="button" (click)="close()" >
+      CANCELAR
+    </button>
+  </div>
+</div>

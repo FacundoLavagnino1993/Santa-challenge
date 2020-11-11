@@ -1,0 +1,44 @@
+{
+  "routes": {
+    "express": {
+      "api": [
+        {
+          "file": "/modules/home/home",
+          "endpoint": "/"
+        },
+        {
+          "file": "/modules/forecast/forecast",
+          "endpoint": "/forecast"
+        },
+        {
+          "file": "/modules/meetup/meetup",
+          "endpoint": "/meetup"
+        },
+        {
+          "file": "/modules/login/login",
+          "endpoint": "/login"
+        },
+        {
+          "file": "/modules/users/users",
+          "endpoint": "/users"
+        }
+      ],
+      "view": [
+        {
+          "file": "/modules/home/home",
+          "endpoint": "/"
+        },
+        {
+          "file": "/modules/home/home",
+          "endpoint": "/login"
+        },{
+          "file": "/modules/home/home",
+          "endpoint": "/home"
+        },{
+          "file": "/modules/home/home",
+          "endpoint": "/home/meets"
+        }
+      ]
+    }
+  }
+}

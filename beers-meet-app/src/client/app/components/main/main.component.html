@@ -1,0 +1,42 @@
+
+<header-component></header-component>
+<div class="main">
+  <div class="side-nav">
+    <div class="user-box">
+      <div class="icon-ctn">
+        <mat-icon>person</mat-icon>
+      </div>
+      <div class="user-info">
+        <span class="name-label">{{name}}</span>
+        <span class="email-label">{{email}}</span>
+      </div>
+    </div>
+    <ul class="nav-list">
+      <li class="list-item" *ngIf="hasAdvancedRole" (click)="createMeet()"><span>CREAR MEETUP</span></li>
+      <li class="list-item" *ngIf="hasAdvancedRole" (click)="sendInvites()"><span>ENVIAR INVITACIONES</span></li>
+    </ul>
+  </div>
+  <div class="body-main">
+    <div class="loading-data" *ngIf="loadingResources">
+      <mat-spinner diameter="80"></mat-spinner>
+    </div>
+    <div class="error-resource" *ngIf="errorToGetForecast || errorToGetMeetups">
+      <span>Hubo un error, por favor reintente nuevamente</span>
+    </div>
+    <div *ngIf="!loadingResources && !errorToGetMeetups && !errorToGetForecast">
+      <mat-tab-group>
+        <mat-tab label="PRÓXIMAS MEETS">
+          <div class="meetups-feed">
+            <meetup [meetups]="currentMeetups" [meetupType]="'current'"></meetup>
+          </div>
+        </mat-tab>
+        <mat-tab  label="MEETS REALIZADAS">
+          <div class="meetups-feed">
+            <meetup [meetups]="oldMeetups" [meetupType]="'old'"></meetup>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
+

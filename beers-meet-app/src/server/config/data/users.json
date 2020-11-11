@@ -1,0 +1,35 @@
+[{
+  "name" : "Juan Perez",
+  "email" : "juan.perez@mail.com",
+  "role" : "user",
+  "password" : "$2y$12$Q/BOtym4pkVhtRYern9y..mpdV3IDpObQrVisnJCCKUnqWiB9O8wy"
+},
+{
+  "name" : "admin",
+  "email" : "admin@mail.com",
+  "role" : "admin",
+  "password" : "$2y$12$z7En/cungI0ncM0aaVZL6ecP5oCnsM6Zfq68XouoSBAE91aezwDPS"
+},
+{
+  "name" : "Pedro Juarez",
+  "email" : "pedro.juarez@mail.com",
+  "password" : "$2y$12$kGXKpotf94JufhN4hZZmDe3g5fu0Hlm/aJVCid148631u3G7YN5Ca",
+  "role" : "user"
+},
+{
+  "name" : "Monica Rodriguez",
+  "email" : "monica.rodriguez@mail.com",
+  "password" : "$2y$12$oELp70Tcxo8PIR0BsoX7PeuHGEd3mttuG4RVf1EqMjhoa.rLfXlce",
+  "role" : "user"
+},
+{
+  "name" : "Jose Hernandez",
+  "email" : "jose.hernandez@mail.com",
+  "password" : "$2y$12$hKjGobQwzAn9MxgxOQ7lGelpJWle4ljW6tNUGoWg46J82k3QnTnUi",
+  "role" : "user"
+}, {
+  "name": "Juliana Paez",
+  "email": "juliana.paez@mail.com",
+  "password": "$2y$12$uCOsAAuD9xkB5oz01ScQQO5U8hW.SLxmpaAk0ezF7AjuTf87dBNjO",
+  "role": "user"
+}]

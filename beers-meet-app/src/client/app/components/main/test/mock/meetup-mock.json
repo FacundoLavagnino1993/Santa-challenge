@@ -1,0 +1,198 @@
+[{
+  "users" : [
+      {
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "name" : "Pedro Juarez",
+          "email" : "pedro.juarez@mail.com"
+      }
+  ],
+  "name" : "meet fest",
+  "dateMeetup" : "2020-10-03T00:30:26.248+0000",
+  "usersCheckIn" : [
+      {
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "name" : "Pedro Juarez",
+          "email" : "pedro.juarez@mail.com"
+      }
+  ]
+},
+{
+  "users" : [
+      {
+          "name" : "Lucas Lopez",
+          "email" : "lucas.lopez@mail.com"
+      },
+      {
+          "name" : "juan Perez",
+          "email" : "juan.perez@mail.com"
+      }
+  ],
+  "name" : "Sunset Meet",
+  "dateMeetup" : "2020-09-28T23:00:00.000+0000",
+  "usersCheckIn" : [
+      {
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      }
+  ]
+},
+{
+  "users" : [
+      {
+          "name" : "Lucas Lopez",
+          "email" : "lucas.lopez@mail.com"
+      },
+      {
+          "name" : "juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "name" : "Jose Farmigli",
+          "email" : "jose.farmigli@mail.com"
+      }
+  ],
+  "name" : "Winter comming Meet",
+  "dateMeetup" : "2020-06-17T01:00:00.000+0000",
+  "usersCheckIn" : [
+      {
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      }
+  ]
+},
+{
+  "users" : [
+      {
+          "name" : "Lucas Lopez",
+          "email" : "lucas.lopez@mail.com"
+      },
+      {
+          "name" : "juan Perez",
+          "email" : "juan.perez@mail.com"
+      }
+  ],
+  "name" : "next Meet",
+  "dateMeetup" : "2020-10-08T01:00:00.000+0000"
+},
+{
+  "users" : [
+      {
+          "_id" : "5f763523b214352c2be7134f",
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "_id" : "5f763549b214352c2be71350",
+          "name" : "admin",
+          "email" : "admin@mail.com"
+      },
+      {
+          "name" : "Monica Rodriguez",
+          "email" : "monica.rodriguez@mail.com"
+      },
+      {
+          "name" : "Jose Hernandez",
+          "email" : "jose.hernandez@mail.com"
+      }
+  ],
+  "name" : "meet D-O-S",
+  "dateMeetup" : "2020-10-09T21:30:00.000+0000"
+},
+{
+  "users" : [
+      {
+          "_id" : "5f763523b214352c2be7134f",
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "_id" : "5f763549b214352c2be71350",
+          "name" : "admin",
+          "email" : "admin@mail.com"
+      },
+      {
+          "name" : "Jose Hernandez",
+          "email" : "jose.hernandez@mail.com"
+      }
+  ],
+  "name" : "FREE MEET",
+  "dateMeetup" : "2020-10-10T23:30:00.000+0000"
+},
+{
+  "users" : [
+      {
+          "_id" : "5f763523b214352c2be7134f",
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "_id" : "5f763549b214352c2be71350",
+          "name" : "admin",
+          "email" : "admin@mail.com"
+      }
+  ],
+  "name" : "Mas test",
+  "dateMeetup" : "2020-10-05T17:00:00.000+0000"
+},
+{
+  "users" : [
+      {
+          "_id" : "5f763523b214352c2be7134f",
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "_id" : "5f763549b214352c2be71350",
+          "name" : "admin",
+          "email" : "admin@mail.com"
+      }
+  ],
+  "name" : "NUEVO TEST",
+  "dateMeetup" : "2020-10-08T23:39:00.000+0000"
+},
+{
+  "users" : [
+      {
+          "_id" : "5f763523b214352c2be7134f",
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      },
+      {
+          "_id" : "5f763549b214352c2be71350",
+          "name" : "admin",
+          "email" : "admin@mail.com"
+      },
+      {
+          "name" : "Pedro Juarez",
+          "email" : "pedro.juarez@mail.com"
+      }
+  ],
+  "name" : "JOCHI MEET",
+  "dateMeetup" : "2020-10-10T23:30:00.000+0000"
+},
+{
+  "users" : [
+      {
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      }
+  ],
+  "name" : "vaaamoo",
+  "dateMeetup" : "2020-10-08T10:30:00.000+0000"
+},
+{
+  "users" : [
+      {
+          "name" : "Juan Perez",
+          "email" : "juan.perez@mail.com"
+      }
+  ],
+  "name" : "FIESTA LOCA",
+  "dateMeetup" : "2020-10-12T23:30:00.000+0000"
+}]

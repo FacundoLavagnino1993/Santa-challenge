@@ -1,0 +1,52 @@
+
+:host {
+  .header-ctn{
+    background: #bb0000;
+    display: flex;
+    height: 64px;
+    padding: 8px;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-box-shadow: 2px 0px 26px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 26px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 26px 1px rgba(0,0,0,0.75);
+    div:first-child {
+      align-items: center;
+      display: flex !important;
+      button {
+        color: #fefefe;
+      }
+      .title {
+        align-items: center;
+        color: #fefefe;
+        display: flex;
+        font-family:  'Acme', sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        padding-left: 8px;
+      }
+    }
+    .notification-ctn {
+      color:#fefefe;
+      display: flex;
+      justify-content: center;
+      width: 48px;
+    }
+    .logout-btn-ctn {
+      color:#fefefe;
+      display: flex;
+      justify-content: center;
+      width: 48px;
+      mat-icon {
+        font-size: 32px;
+        height: 32px;
+        width: 32px;
+      }
+    }
+    .logout-btn-ctn:hover {
+      color:#333333;
+    }
+
+  }
+}
+

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/components/header/header.component.scss';
+@import './app/components/meetup/meetup.component.scss';
+@import './app/components/login/login.component.scss';
+@import './app/components/main/main.component.scss';
+@import './app/components/invite/invite.component.scss';
+@import './app/scss/main.scss';
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+html,
+body {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow: scroll;
+  }
+}

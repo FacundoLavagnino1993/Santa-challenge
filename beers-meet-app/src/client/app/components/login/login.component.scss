@@ -1,0 +1,97 @@
+@import '../../scss/variables';
+
+.login {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  @include md {
+    flex-direction: column;
+    .label-box {
+      height: 64px;
+      width:100%;
+    }
+    .login-ctn {
+      height: 70%;
+      margin: auto;
+      margin-top: 0px;
+      width: 80%;
+    }
+  }
+}
+.label-box {
+  align-items: center;
+  background-color: #bb0000;
+  height: 320px;
+  color: #fefefe;
+  display: flex;
+  font-family:  'Acme', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.login-ctn {
+  align-items: center;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  .title-ctn {
+    display: flex;
+    font-family:  'Acme', sans-serif;
+    height: 24px;
+    justify-content: center;
+    width: 100%;
+    .title {
+      color: #333333;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+  .form-ctn {
+    margin: auto;
+    margin-top: 32px;
+    width: 100%;
+    .mat-form-field {
+      width: 100% !important;
+    }
+  }
+  .button-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+    .mat-button {
+      background-color: #bb0000;
+      color: #fefefe;
+    }
+  }
+  .error-ctn {
+    font-family:  Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 24px;
+  }
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  color: #bb0000 !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+
+  background-color: #bb0000 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+
+  background-color: #bb0000 !important;;
+ }
+
+ ::ng-deep.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #bb0000;
+}
